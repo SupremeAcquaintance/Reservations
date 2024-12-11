@@ -1,0 +1,49 @@
+/* UserProfile.css */
+
+.profile-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #ff7e5f; /* Match the hero section color */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #ff7e5f; /* Match the hero section color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #feb47b; /* Lighter shade on hover */
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff7e5f; /* Match the hero section color */
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 20px;
+}

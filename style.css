@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #212529;
+    color: lightgrey;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.1rem;
+    background-color: #212529;
+    backdrop-filter: blur(20px);
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    list-style-type: none;
+    padding: 20px;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.2s;
+}
+
+aside li {
+    color: white;
+}
+
+aside li:hover {
+    color: #88ed99;
+}
+
+aside li::after {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #88ed99);
+    bottom: 8px;
+}
+
+aside li i {
+    font-size: 1.3rem;
+}
+
+.activeLink {
+    color: #88ed99;
+}
+
+.mySwiper {
+    flex: 1;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    background-color: #343a40;
+    height: 100%;
+}
+
+.home-slide, .meal-slide {
+    color: white;
+    display: flex;
+    background-color: #343a40;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.meal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.booking-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #88ed99;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #1d8637;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #176d2d;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+}
+
+.feature h3 {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    background-color: #212529;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #85f69f;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contactinfo i {
+    padding: 10px;
+    font-size: 2.5rem;
+    color: #80ed99;
+    margin: 28px auto;
+}
+
+.contactinfo h3 {
+    margin: 0;
+}
+
+.search-filter {
+    padding: 20px;
+}
+
+.search-filter input {
+    margin: 10px 0;
+}
+
+.search-filter button {
+    margin-top: 10px;
+}
+
+.search-filter ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-filter li {
+    margin: 5px 0;
+}
+
+.loading {
+    text-align: center;
+    color: #88ed99;
+    font-size: 1.5rem;
+}
+
+.user-profile {
+    padding: 20px;
+}
+
+.user-profile h2 {
+    color: #88ed99;
+}
+
+.user-profile p {
+    margin: 5px 0;
+}
+
+.user-profile button {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin: 10px 0;
+    }
+}

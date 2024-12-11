@@ -1,0 +1,68 @@
+/* UserRegistration.css */
+
+.registration-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ff7e5f, darkslategray);
+  border-radius: 10px;
+  box-shadow : 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #ff7e5f; /* Match the hero section color */
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #ff7e5f; /* Highlight border on focus */
+  outline: none;
+}
+
+.btn {
+  background-color: #ff7e5f; /* Match the hero section color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #feb47b; /* Lighter shade on hover */
+}
+
+.login-prompt {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #ff7e5f; /* Match the hero section color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: #feb47b; /* Lighter shade on hover */
+}

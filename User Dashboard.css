@@ -1,0 +1,63 @@
+/* UserDashboard.css */
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: darkslategrey; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #ff6b6b; /* Match the hero section color */
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: darksalmon; /* White background for buttons */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #ff6b6b; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
+.tab-button.active {
+  background-color: #ff6b6b; /* Active tab color */
+  color: white; /* Active tab text color */
+  border: none; /* Remove border for active tab */
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: darksalmon; /* White background for content */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
